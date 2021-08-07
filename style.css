@@ -29,7 +29,7 @@ body {
 .button {
     background-color: #BABABA;
     border: none;
-    color: white;
+    color: black;
     padding: 8px 42px;
     text-align: center;
     text-decoration: none;
@@ -44,7 +44,7 @@ body {
 
 .button6 {
     background-color: #303030;
-    color: black;
+    color: white;
     width: 250px;
     border-radius: 6px;
     border: 2px solid #303030;

@@ -147,7 +147,7 @@ body {
 }
 
 a.bttn {
-  color: black;
+  color: #2A2A2A;
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;

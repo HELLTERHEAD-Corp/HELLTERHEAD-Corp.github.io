@@ -59,7 +59,7 @@ function getP(){
                 template: {
                     type: "image_carousel",
                     columns: [{
-                        imageUrl: "https://stickershop.line-scdn.net/stickershop/v1/sticker/8117761/IOS/sticket_animation@2x.png",
+                        imageUrl: "https://stickershop.line-scdn.net/stickershop/v1/sticker/8117761/IOS/sticker_animation@2x.png",
                         action: {
                             type: "uri",
                             uri: "line://shop/sticker/detail/"+pkg

@@ -28,6 +28,7 @@ body {
 
 .button {
     background-color: #00CCFF;
+    color: #FFFFFF;
     border: none;
     color: black;
     padding: 8px 42px;
@@ -43,7 +44,7 @@ body {
 }
 
 .button6 {
-    background-color: #303030;
+    background-color: #00CCFF;
     color: #00CCFF;
     width: 250px;
     border-radius: 6px;

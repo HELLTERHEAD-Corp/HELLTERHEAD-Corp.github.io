@@ -92,7 +92,7 @@ function getParameterByName(name, url) {
 
 function getProfile(){
     liff.getProfile().then(function (profile) {
-        document.getElementById('userid').textContent = 'Hello  ' + profile.displayName;
+        document.getElementById('userid').textContent = profile.displayName;
         document.getElementById('main').src = profile.pictureUrl;        
         document.getElementById('close').addEventListener('click', function () {
             liff.closeWindow();
@@ -185,6 +185,10 @@ function makeSticker(){
 function meProfile(){
     var tipe = getParameterByName('type');
     liff.getProfile().then(function (prof) {
+        var pict = prof.pictureUrl;
+        if (pict == null) {
+            var pict = "https://i.ibb.co/tczXyp1/hlth-Img-Not-Found.jpg";
+        }
         var stat = prof.statusMessage;
         if (stat == null) {
             var stat = " ";
@@ -198,7 +202,7 @@ function meProfile(){
                 altText: "Profile "+prof.displayName,
                 template: {
                     type: "buttons",
-                    thumbnailImageUrl: prof.pictureUrl,
+                    thumbnailImageUrl: pict,
                     imageAspectRatio: "square",
                     imageSize: "cover",
                     title: prof.displayName,

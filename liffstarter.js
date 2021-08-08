@@ -37,8 +37,8 @@ function getP(){
         document.getElementById('videox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'video',
-                originalContentUrl: atob('aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xeTJrQlVwcmxPQW1YTHZyZm5pTEpVQ0RIMTlpS05JVVIvdmlldz91c3A9ZHJpdmVzZGs='),
-                previewImageUrl: atob('aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xdDlYaGpCTkk0WUdpcWQ0OVZSSjZxeWJYUndraGRCZ2Uvdmlldz91c3A9ZHJpdmVzZGs=')
+                originalContentUrl: 'https://drive.google.com/file/d/1t9XhjBNI4YGiqd49VRJ6qybXRwkhdBge/view?usp=drivesdk',
+                previewImageUrl: 'https://drive.google.com/file/d/1y2kBUprlOAmXLvrfniLJUCDH19iKNIUR/view?usp=drivesdk'
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -46,7 +46,7 @@ function getP(){
         document.getElementById('audiox').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'audio',
-                originalContentUrl: atob('aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xX1pEdS03YTlIVlpWcVlod2RPVzhiTHdJNFFGZml5NWkvdmlldz91c3A9ZHJpdmVzZGs='),
+                originalContentUrl: 'https://drive.google.com/file/d/1_ZDu-7a9HVZVqYhwdOW8bLwI4QFfiy5i/view?usp=drivesdk',
                 duration: 60000
             }]).then(function () {
                 liff.closeWindow();

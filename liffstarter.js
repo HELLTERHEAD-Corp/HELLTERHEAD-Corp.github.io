@@ -62,7 +62,7 @@ function getP(){
                         imageUrl: "https://stickershop.line-scdn.net/stickershop/v1/sticker/8117761/IOS/sticker_animation@2x.png",
                         action: {
                             type: "uri",
-                            uri: "line://shop/sticker/detail/"+pkg
+                            uri: "line://shop/sticker/detail/5331"
                         }
                     }]
                 }

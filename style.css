@@ -34,7 +34,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: "Courier New", monospace;
+    font-family: Copperplate, Papyrus, fantasy;
     font-size: 16px;
     margin: 1px 1px;
     -webkit-transition-duration: 0.4s;
@@ -137,7 +137,7 @@ body {
     top: 10px;
 }
 
-@import "https://fonts.googleapis.com/css?family=Courier+New:300,400";
+@import "https://fonts.googleapis.com/css?family=Copperplate:300,400";
 *,
 *::before,
 *::after {
@@ -147,20 +147,20 @@ body {
 }
 
 a.bttn {
-  color: #CCCCCC;
+  color: #AAAAAA;
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;
 }
 a.bttn: hover {
-  color: #AAAAAA;
+  color: #00CCFF;
 }
 a.bttn: focus {
-  color: #AAAAAA;
+  color: #00CCFF;
 }
 
 .bttn {
-  font-family: "Courier New", monospace;
+  font-family: Copperplate, Papyrus, fantasy;
   font-size: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -170,7 +170,7 @@ a.bttn: focus {
   font-weight: bold;
   padding: 5px 0px;
   border: 3px solid #999999;
-  border-radius: 1px;
+  border-radius: 6px;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
 }

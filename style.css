@@ -1,5 +1,5 @@
 html{
-    font-size: 11px;
+  font-size: 11px;
 }
 
 body {
@@ -22,119 +22,119 @@ body {
 }
 
 #imag { 
-    max-width: 25%; 
-    height: auto; 
+  max-width: 25%; 
+  height: auto; 
 }
 
 .button {
-    background-color: #00CCFF;
-    border: none;
-    color: black;
-    padding: 8px 42px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 16px;
-    margin: 1px 1px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
+  background-color: #00CCFF;
+  border: none;
+  color: black;
+  padding: 8px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 16px;
+  margin: 1px 1px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .button6 {
-    background-color: #303030;
-    color: #00CCFF;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px solid #333333;
+  background-color: #303030;
+  color: #00CCFF;
+  width: 250px;
+  border-radius: 6px;
+  border: 2px solid #333333;
 }
 
 .button6:hover {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button5 {
-    background-color: #404040;
-    color: #00CCFF;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px solid #444444;
+  background-color: #404040;
+  color: #00CCFF;
+  width: 250px;
+  border-radius: 6px;
+  border: 2px solid #444444;
 }
 
 .button5:hover {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button4 {
-    background-color: #505050;
-    color: #00CCFF;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px solid #555555;
+  background-color: #505050;
+  color: #00CCFF;
+  width: 250px;
+  border-radius: 6px;
+  border: 2px solid #555555;
 }
 
 .button4:hover {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button3 {
-    background-color: #606060;
-    color: #00CCFF;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px solid #666666;
+  background-color: #606060;
+  color: #00CCFF;
+  width: 250px;
+  border-radius: 6px;
+  border: 2px solid #666666;
 }
 
 .button3:hover {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button2 {
-    background-color: #707070;
-    color: #00CCFF;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px solid #777777;
+  background-color: #707070;
+  color: #00CCFF;
+  width: 250px;
+  border-radius: 6px;
+  border: 2px solid #777777;
 }
 
 .button2:hover {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button1 {
-    background-color: #808080;
-    color: #00CCFF;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px solid #888888;
+  background-color: #808080;
+  color: #00CCFF;
+  width: 250px;
+  border-radius: 6px;
+  border: 2px solid #888888;
 }
 
 .button1:hover {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .responsive {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .layang {
-    position: fixed;
-    right: 5px;
-    top: 10px;
+  position: fixed;
+  right: 5px;
+  top: 10px;
 }
 
 @import "https://fonts.googleapis.com/css?family=Copperplate:300,400";

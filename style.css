@@ -11,11 +11,11 @@ body {
 }
 
 .dark {
-  background: #2A2A2A;
+  background: #2a2a2a;
 }
 
 .flex {
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,14 +27,14 @@ body {
 }
 
 .button {
-  background-color: #00CCFF;
+  background-color: #00ccff;
   border: none;
   color: black;
   padding: 8px 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   margin: 1px 1px;
   -webkit-transition-duration: 0.4s;
@@ -44,7 +44,7 @@ body {
 
 .button6 {
   background-color: #303030;
-  color: #00CCFF;
+  color: #00ccff;
   width: 250px;
   border-radius: 6px;
   border: 2px solid #333333;
@@ -58,7 +58,7 @@ body {
 
 .button5 {
   background-color: #404040;
-  color: #00CCFF;
+  color: #00ccff;
   width: 250px;
   border-radius: 6px;
   border: 2px solid #444444;
@@ -72,7 +72,7 @@ body {
 
 .button4 {
   background-color: #505050;
-  color: #00CCFF;
+  color: #00ccff;
   width: 250px;
   border-radius: 6px;
   border: 2px solid #555555;
@@ -86,7 +86,7 @@ body {
 
 .button3 {
   background-color: #606060;
-  color: #00CCFF;
+  color: #00ccff;
   width: 250px;
   border-radius: 6px;
   border: 2px solid #666666;
@@ -100,7 +100,7 @@ body {
 
 .button2 {
   background-color: #707070;
-  color: #00CCFF;
+  color: #00ccff;
   width: 250px;
   border-radius: 6px;
   border: 2px solid #777777;
@@ -114,7 +114,7 @@ body {
 
 .button1 {
   background-color: #808080;
-  color: #00CCFF;
+  color: #00ccff;
   width: 250px;
   border-radius: 6px;
   border: 2px solid #888888;
@@ -137,8 +137,6 @@ body {
   top: 10px;
 }
 
-@import "https://fonts.googleapis.com/css?family=Copperplate:300,400";
-*,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
@@ -160,7 +158,7 @@ a.bttn:focus {
 }
 
 .bttn {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -184,7 +182,7 @@ a.bttn:focus {
   bottom: 0;
   opacity: 0;
   content: '';
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   z-index: -2;
 }
 .bttn:hover:before {

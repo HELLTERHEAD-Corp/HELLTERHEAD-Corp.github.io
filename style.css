@@ -130,9 +130,9 @@ body .cybr-btn + .cybr-btn {
   --primary-hue: 0;
   --primary-lightness: 50;
   --color: hsl(0, 0%, 100%);
-  --font-size: 26px;
+  --font-size: 20px;
   --shadow-primary-hue: 180;
-  --label-size: 10px;
+  --label-size: 8px;
   --shadow-secondary-hue: 50;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
   --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
@@ -156,7 +156,7 @@ body .cybr-btn + .cybr-btn {
   position: relative;
   font-weight: 500;
   border: 0;
-  min-width: 320px;
+  min-width: 260px;
   height: 40px;
   line-height: 40px;
   transition: background 0.2s;
@@ -164,8 +164,8 @@ body .cybr-btn + .cybr-btn {
   background-repeat: no-repeat;
   padding-left: 0px !important;
   background-size: 5%;
-  background-position-x: 92.2%;
-  background-position-y: 40%;
+  background-position-x: 95%;
+  background-position-y: 45%;
 }
 
 .cybr-btn:hover {
@@ -201,8 +201,8 @@ body .cybr-btn + .cybr-btn {
   padding: 1px 4px;
   letter-spacing: 1px;
   line-height: 0;
-  bottom: -5%;
-  right: 5%;
+  bottom: -5.8%;
+  right: 4.2%;
   font-weight: normal;
   color: hsl(0, 0%, 0%);
   font-size: var(--label-size);

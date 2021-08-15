@@ -7,6 +7,29 @@ window.onload = function (e) {
 function getP(){
     var tipe = getParameterByName('type')
     if (!tipe) {
+        document.getElementById('profilex').addEventListener('click', function () {
+            liff.sendMessages([{
+                type: "template",
+                altText: "HELLTERHEAD Corp.",
+                template: {
+                    type: "buttons",
+                    thumbnailImageUrl: "https://i.ibb.co/8MWxCCV/hlth-M-profile.png",
+                    imageAspectRatio: "square",
+                    imageSize: "cover",
+                    title: "HELLTERHEAD Corp.",
+                    text: "LINE Future 伝令",
+                    actions: [
+                        {
+                            type: "uri",
+                            label: "Official",
+                            uri: "https://lin.ee/aCi5eZC"
+                        }
+                    ]
+                }
+            }]).then(function () {
+                liff.closeWindow();
+            });        
+        });
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',

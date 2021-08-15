@@ -1,17 +1,12 @@
 html {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 body {
-  background: -webkit-linear-gradient(0deg, #ffffff, #ffffff);
-  background: linear-gradient(0deg, #ffffff, #ffffff);
+  background: white;
   height: 100vh;
   margin: 0; 
   padding: 0;
-}
-
-.dark {
-  background: #2a2a2a;
 }
 
 .flex {
@@ -21,78 +16,28 @@ body {
   justify-content: center;
 }
 
-#imag { 
-  max-width: 25%; 
-  height: auto; 
-}
-
 .button {
-  background-color: #00ccff;
-  border: none;
-  color: black;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   padding: 8px 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
-  margin: 1px 1px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.button6 {
-  background-color: #303030;
+.button1 {
+  background-color: #808080;
   color: #00ccff;
-  width: 250px;
+  width: 260px;
   border-radius: 6px;
-  border: 2px solid #333333;
+  border: 3px solid #808080;
 }
-
-.button6:hover {
-  background-color: transparent;
-  color: black;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button5 {
-  background-color: #404040;
-  color: #00ccff;
-  width: 250px;
-  border-radius: 6px;
-  border: 2px solid #444444;
-}
-
-.button5:hover {
-  background-color: transparent;
-  color: black;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button4 {
-  background-color: #505050;
-  color: #00ccff;
-  width: 250px;
-  border-radius: 6px;
-  border: 2px solid #555555;
-}
-
-.button4:hover {
-  background-color: transparent;
-  color: black;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button3 {
-  background-color: #606060;
-  color: #00ccff;
-  width: 250px;
-  border-radius: 6px;
-  border: 2px solid #666666;
-}
-
-.button3:hover {
+.button1:hover {
   background-color: transparent;
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -101,26 +46,63 @@ body {
 .button2 {
   background-color: #707070;
   color: #00ccff;
-  width: 250px;
+  width: 260px;
   border-radius: 6px;
-  border: 2px solid #777777;
+  border: 3px solid #707070;
 }
-
 .button2:hover {
   background-color: transparent;
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button1 {
-  background-color: #808080;
+.button3 {
+  background-color: #606060;
   color: #00ccff;
-  width: 250px;
+  width: 260px;
   border-radius: 6px;
-  border: 2px solid #888888;
+  border: 3px solid #606060;
+}
+.button3:hover {
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button1:hover {
+.button4 {
+  background-color: #505050;
+  color: #00ccff;
+  width: 260px;
+  border-radius: 6px;
+  border: 3px solid #505050;
+}
+.button4:hover {
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button5 {
+  background-color: #404040;
+  color: #00ccff;
+  width: 260px;
+  border-radius: 6px;
+  border: 3px solid #404040;
+}
+.button5:hover {
+  background-color: transparent;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button6 {
+  background-color: #303030;
+  color: #00ccff;
+  width: 260px;
+  border-radius: 6px;
+  border: 3px solid #303030;
+}
+.button6:hover {
   background-color: transparent;
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -131,12 +113,6 @@ body {
   height: auto;
 }
 
-.layang {
-  position: fixed;
-  right: 5px;
-  top: 10px;
-}
-
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
@@ -144,35 +120,35 @@ body {
   box-sizing: border-box;
 }
 
-a.bttn {
-  color: #2A2A2A;
-  text-decoration: none;
+a.buttons {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;
+  color: #303030;
+  text-decoration: none;
 }
-a.bttn:hover {
+a.buttons:hover {
   color: #00CCFF;
 }
-a.bttn:focus {
+a.buttons:focus {
   color: #00CCFF;
 }
 
-.bttn {
+.buttons {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
-  width: 270px;
+  width: 260px;
   font-weight: bold;
   padding: 5px 0px;
-  border: 3px solid #999999;
+  border: 3px solid #909090;
   border-radius: 6px;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-.bttn:before {
+.buttons:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   position: absolute;
@@ -182,17 +158,18 @@ a.bttn:focus {
   bottom: 0;
   opacity: 0;
   content: '';
-  background-color: #cccccc;
+  background-color: #303030;
   z-index: -2;
 }
-.bttn:hover:before {
+.buttons:hover:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
 }
-.bttn:focus:before {
+.buttons:focus:before {
+  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   left: 0;
   right: 0;

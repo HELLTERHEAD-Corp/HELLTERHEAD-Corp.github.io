@@ -50,7 +50,7 @@ body {
     border: 2px solid #333333;
 }
 
-.button6: hover {
+.button6:hover {
     background-color: transparent;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -64,7 +64,7 @@ body {
     border: 2px solid #444444;
 }
 
-.button5: hover {
+.button5:hover {
     background-color: transparent;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -78,7 +78,7 @@ body {
     border: 2px solid #555555;
 }
 
-.button4: hover {
+.button4:hover {
     background-color: transparent;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -92,7 +92,7 @@ body {
     border: 2px solid #666666;
 }
 
-.button3: hover {
+.button3:hover {
     background-color: transparent;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -106,7 +106,7 @@ body {
     border: 2px solid #777777;
 }
 
-.button2: hover {
+.button2:hover {
     background-color: transparent;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -120,7 +120,7 @@ body {
     border: 2px solid #888888;
 }
 
-.button1: hover {
+.button1:hover {
     background-color: transparent;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -152,10 +152,10 @@ a.bttn {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;
 }
-a.bttn: hover {
+a.bttn:hover {
   color: #00CCFF;
 }
-a.bttn: focus {
+a.bttn:focus {
   color: #00CCFF;
 }
 
@@ -187,14 +187,14 @@ a.bttn: focus {
   background-color: #CCCCCC;
   z-index: -2;
 }
-.bttn:hover: before {
+.bttn:hover:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
 }
-.bttn:focus: before {
+.bttn:focus:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;

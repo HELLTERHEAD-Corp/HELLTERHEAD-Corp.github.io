@@ -6,7 +6,94 @@ window.onload = function(e) {
 
 function getP() {
   var tipe = getParameterByName('type')
-  if (tipe){
+  if (!tipe){
+    document.getElementById('profilex').addEventListener('click', function() {
+      liff.sendMessages([{
+        type: "template",
+        altText: "HELLTERHEAD Corp.",
+        template: {
+          type: "buttons",
+          thumbnailImageUrl: "https://i.ibb.co/8MWxCCV/hlth-M-profile.png",
+          imageAspectRatio: "square",
+          imageSize: "cover",
+          title: "HELLTERHEAD Corp.",
+          text: "LINE Future 伝令",
+          actions: [
+            {
+              type: "uri",
+              label: "Official",
+              uri: "https://lin.ee/aCi5eZC"
+            }
+          ]
+        }
+      }]).then(function() {
+        liff.closeWindow();
+      });        
+    });
+    document.getElementById('textx').addEventListener('click', function() {
+      liff.sendMessages([{
+        type: 'text',
+        text: 'This is a small web application that demonstrates the basic functionality of the LINE Front-end Framework (LIFF).\n\nSupport by HELLTERHEAD Corp.',
+        sentBy: {
+          label: 'セルボットＤＲＥ！',
+          iconUrl: 'https://i.ibb.co/HnN4jFP/hlth-up.gif',
+          linkUrl: 'https://line.me/ti/p/~luscious.net'
+        }
+      }]).then(function() {
+        liff.closeWindow();
+      });
+    });
+    document.getElementById('imagex').addEventListener('click', function() {
+      liff.sendMessages([{
+        type: 'image',
+        originalContentUrl: 'https://i.ibb.co/Tb1kWf2/Mo-banzu.jpg',
+        previewImageUrl: 'https://i.ibb.co/Tb1kWf2/Mo-banzu.jpg',
+        sentBy: {
+          label: 'セルボットＤＲＥ！',
+          iconUrl: 'https://i.ibb.co/HnN4jFP/hlth-up.gif',
+          linkUrl: 'https://line.me/ti/p/~luscious.net'
+        }
+      }]).then(function() {
+        liff.closeWindow();
+      });
+    });
+    document.getElementById('videox').addEventListener('click', function() {
+      liff.sendMessages([{
+        type: 'video',
+        originalContentUrl: 'https://drive.google.com/file/d/1t9XhjBNI4YGiqd49VRJ6qybXRwkhdBge/view?usp=drivesdk',
+        previewImageUrl: 'https://drive.google.com/file/d/1y2kBUprlOAmXLvrfniLJUCDH19iKNIUR/view?usp=drivesdk'
+      }]).then(function() {
+        liff.closeWindow();
+      });
+    });
+    document.getElementById('audiox').addEventListener('click', function() {
+      liff.sendMessages([{
+        type: 'audio',
+        originalContentUrl: 'https://drive.google.com/file/d/1_ZDu-7a9HVZVqYhwdOW8bLwI4QFfiy5i/view?usp=drivesdk',
+        duration: 60000
+      }]).then(function(){
+        liff.closeWindow();
+      });
+    });
+    document.getElementById('stickerx').addEventListener('click', function() {
+      liff.sendMessages([{
+        type: 'template',
+        altText: 'Sticker',
+        template: {
+          type: 'image_carousel',
+          columns: [{
+            imageUrl: 'https://stickershop.line-scdn.net/stickershop/v1/sticker/8117761/IOS/sticker_animation@2x.png',
+            action: {
+              type: 'uri',
+              uri: 'line://shop/sticker/detail/5331'
+            }
+          }]
+        }
+      }]).then(function() {
+        liff.closeWindow();
+      });
+    });
+  } else {
     makeProfile();
     makeText();
     makeImage();
@@ -19,7 +106,7 @@ function getP() {
 function getParameterByName(name, url) {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
-  var regex = new RegExp('[?&]'+name+'(=([^&#]*)|&|#|$)'),
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return '';
@@ -41,31 +128,31 @@ function makeProfile() {
   liff.getProfile().then(function(prof) {
     var pict = prof.pictureUrl;
     if (pict == null) {
-      var pict = 'https://github.com/HELLTERHEAD-Corp/HELLTERHEAD-Corp.github.io/blob/main/assets/hlth_img_not_found.jpg';
+      var pict = "https://i.ibb.co/tczXyp1/hlth-Img-Not-Found.jpg";
     }
     var stat = prof.statusMessage;
     if (stat == null) {
-      var stat = ' ';
+      var stat = " ";
     }
     if (stat.length > 60) {
-      var stat = 'Text length over limit';
+      var stat = "Status Message is to long! Max 60 words";
     }
     if (tipe === 'profile') {
       liff.sendMessages([{
-        type: 'template',
-        altText: 'Profile '+prof.displayName,
+        type: "template",
+        altText: "Profile "+prof.displayName,
         template: {
-          type: 'buttons',
+          type: "buttons",
           thumbnailImageUrl: pict,
-          imageAspectRatio: 'square',
-          imageSize: 'cover',
+          imageAspectRatio: "square",
+          imageSize: "cover",
           title: prof.displayName,
           text: stat,
           actions: [
             {
-              type: 'uri',
-              label: 'Profile',
-              uri: 'line://nv/profilePopup/mid='+prof.mid
+              type: "uri",
+              label: "Profile",
+              uri: "line://nv/profilePopup/mid="+prof.mid
             }
           ]
         }
@@ -135,20 +222,20 @@ function makeSticker() {
     var pkg = getParameterByName('pkg');
     var ep = '';
     if (stk === 'anim') {
-      ep = '/IOS/sticker_animation@2x.png';
+      ep = "/IOS/sticker_animation@2x.png";
     } else {
-      ep = '/IOS/sticker@2x.png';
+      ep = "/IOS/sticker@2x.png";
     }
     liff.sendMessages([{
-      type: 'template',
-      altText: 'Sticker',
+      type: "template",
+      altText: "Sticker",
       template: {
-        type: 'image_carousel',
+        type: "image_carousel",
         columns: [{
-          imageUrl: 'https://stickershop.line-scdn.net/stickershop/v1/sticker/'+sid+ep,
+          imageUrl: "https://stickershop.line-scdn.net/stickershop/v1/sticker/"+sid+ep,
           action: {
-            type: 'uri',
-            uri: 'line://shop/sticker/detail/'+pkg
+            type: "uri",
+            uri: "line://shop/sticker/detail/"+pkg
           }
         }]
       }

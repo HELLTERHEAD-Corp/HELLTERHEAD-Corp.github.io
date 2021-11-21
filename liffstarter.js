@@ -37,7 +37,7 @@ function getP() {
         sentBy: {
           label: 'HELLTERHEAD Corp.',
           iconUrl: 'https://github.com/HELLTERHEAD-Corp/HELLTERHEAD-Corp.github.io/blob/main/assets/hlth_logo.gif',
-          linkUrl: 'https://line.me/ti/p/~luscious.net'
+          linkUrl: 'https://line.me/ti/p/~mo-banzu'
         }
       }]).then(function() {
         liff.closeWindow();
@@ -51,7 +51,7 @@ function getP() {
         sentBy: {
           label: 'HELLTERHEAD Corp.',
           iconUrl: 'https://github.com/HELLTERHEAD-Corp/HELLTERHEAD-Corp.github.io/blob/main/assets/hlth_logo.gif',
-          linkUrl: 'https://line.me/ti/p/~luscious.net'
+          linkUrl: 'https://line.me/ti/p/~mo-banzu'
         }
       }]).then(function() {
         liff.closeWindow();

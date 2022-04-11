@@ -9,16 +9,16 @@ window.onload = function() {
                 "referer": "https://pixiv.net/en/"
             }
         })
-            .then(function(reqResponse) {
-                return reqResponse.json();
-            })
-            .then(function(jsonResponse) {
-                myLiffId = jsonResponse.id;
-                initializeLiff(myLiffId);
-            })
-            .catch(function(error) {
-                console.log(error.message, error.code);
-            });
+        .then(function(reqResponse) {
+            return reqResponse.json();
+        })
+        .then(function(jsonResponse) {
+            myLiffId = jsonResponse.id;
+            initializeLiff(myLiffId);
+        })
+        .catch(function(error) {
+            console.log(error.message, error.code);
+        });
     } else {
         myLiffId = defaultLiffId;
         initializeLiff(myLiffId);
